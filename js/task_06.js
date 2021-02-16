@@ -1,20 +1,15 @@
-// Write code under this line
-const getUsersWithAge = (array, min, max) =>
-  array
-    .filter(({ age }) => age > min && age < max)
-    .map(({ name, email }) => ({ name, email }));
+// Пиши код ниже этой строки
+const calculateTotalPrice = (orderedItems) => {
+    let totalPrice = 0;
+  
+    orderedItems.forEach(item => {
+      totalPrice += item;
+    });
+  
+    return totalPrice;
+}
+// Пиши код выше этой строки
 
-console.log(getUsersWithAge(users, 20, 30));
-/* [
-    { name: 'Ross Vazquez', email: 'rossvazquez@xinware.com' },
-    { name: 'Elma Head', email: 'elmahead@omatom.com' },
-    { name: 'Carey Barr', email: 'careybarr@nurali.com' }
-] */
-
-// console.log(getUsersWithAge(users, 30, 40));
-/* [
-    { name: 'Moore Hensley', email: 'moorehensley@indexia.com' },
-    { name: 'Sharlene Bush', email: 'sharlenebush@tubesys.com' },
-    { name: 'Blackburn Dotson', email: 'blackburndotson@furnigeer.com' },
-    { name: 'Sheree Anthony', email: 'shereeanthony@kog.com' }
-] */
+console.log(calculateTotalPrice([12, 85, 37, 4]));
+console.log(calculateTotalPrice([164, 48, 291]));
+console.log(calculateTotalPrice([412, 371, 94, 63, 176]));

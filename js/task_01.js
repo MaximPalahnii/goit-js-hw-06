@@ -1,15 +1,13 @@
-// Write code under this line
-
-const getUserNames = users => users.map(({ name }) => name);
-
-console.log(getUserNames(users));
-
-/* [
-  "Moore Hensley",
-  "Sharlene Bush",
-  "Ross Vazquez",
-  "Elma Head",
-  "Carey Barr",
-  "Blackburn Dotson",
-  "Sheree Anthony",
-] */
+function calculateTotalPrice(orderedItems) {
+  let totalPrice = 0;
+  // Пиши код ниже этой строки
+orderedItems.forEach((orderedItem) => {
+        totalPrice += orderedItem;
+    })
+  
+    // for (let i = 0; i < orderedItems.length; i += 1) {
+    //   totalPrice += orderedItems[i];
+    // }
+  // Пиши код выше этой строки
+  return totalPrice;
+}

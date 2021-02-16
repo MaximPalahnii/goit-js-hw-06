@@ -1,18 +1,5 @@
-// Write code under this line
-const getSortedUniqueSkills = array =>
-  array
-    .reduce((uniqueSkills, { skills }) => uniqueSkills.concat(skills), [])
-    .filter((item, index, array) => array.indexOf(item) === index)
-    .sort();
+const planets = ['Земля', 'Марс', 'Венера', 'Юпитер'];
+// Пиши код ниже этой строки
+const planetsLengths = planets.map(planet => planet.split('').length);
 
-console.log(getSortedUniqueSkills(users));
-/* [ 'adipisicing', 'amet',
- 'anim', 'commodo',
- 'culpa', 'elit',
- 'ex', 'ipsum',
- 'irure', 'laborum',
- 'lorem', 'mollit',
- 'non', 'nostrud',
- 'nulla', 'proident',
- 'tempor', 'velit',
- 'veniam' ]; */
+console.log(planetsLengths);
